@@ -9,7 +9,7 @@ const app = express()
 app.use(cors());
 
 // const uri = 'mongodb+srv://naveenbscmca1518:zlTWvCrHrooGlLov@newcluster.8zvx9.mongodb.net/ProductDirectory?retryWrites=true&w=majority&appName=NewCluster';
-mongoose.connect('mongodb+srv://deployUser:Welcome123@newcluster.8zvx9.mongodb.net/ProductDirectory/firmdatas?retryWrites=true&w=majority&appName=NewCluster')
+mongoose.connect('mongodb+srv://deployUser:Welcome123@newcluster.8zvx9.mongodb.net/ProductDirectory?retryWrites=true&w=majority&appName=NewCluster')
 
 mongoose.connection.on('connected', ()=>{
     console.log('MongoDB successfully connectd')
