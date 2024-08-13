@@ -39,7 +39,6 @@ const NavBar = () => {
   const [btn, setBtn] = useState(false)
   const [isPopup, setIspopup] = useState(false)
 
-  axios.defaults.withCredentials = true
   const fetchFirmDetails = async (e) => {
     e.preventDefault()
     if (product !== ' ')
