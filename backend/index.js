@@ -6,7 +6,11 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://66bb1299be029ad2babee232--stately-druid-e94352.netlify.app', // Allow requests from this origin https://66bb1299be029ad2babee232--stately-druid-e94352.netlify.app/
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
 
 // const uri = 'mongodb+srv://naveenbscmca1518:zlTWvCrHrooGlLov@newcluster.8zvx9.mongodb.net/ProductDirectory?retryWrites=true&w=majority&appName=NewCluster';
 mongoose.connect('mongodb+srv://naveenbscmca1518:user123@mernapi.exvm5.mongodb.net/ProductDirectory?retryWrites=true&w=majority&appName=MernApi')
