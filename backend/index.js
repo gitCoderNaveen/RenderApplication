@@ -8,7 +8,7 @@ const app = express()
 
 app.use(cors())
 
-mongoose.connect('mongodb://127.0.0.1:27017/ProductDirectory')
+mongoose.connect('mongodb+srv://naveenbscmca1518:zlTWvCrHrooGlLov@newcluster.8zvx9.mongodb.net/ProductDirectory?retryWrites=true&w=majority&appName=NewCluster')
 
 mongoose.connection.on('connected', ()=>{
     console.log('MongoDB successfully connectd')
